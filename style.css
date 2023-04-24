@@ -28,11 +28,11 @@ button {
   text-align: right;
 }
 
-.header-img {
+.header__img {
   width: 100%;
 }
 
-.header .header-info {
+.header .header__info {
   font-family: fantasy, cursive;
 }
 
@@ -50,8 +50,8 @@ button {
   margin: 0 auto 0;
 }
 
-.task-input,
-.task-label {
+.task__input,
+.task__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -72,7 +72,7 @@ button {
 }
 
 /* Heading */
-.task-title {
+.task__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -82,7 +82,7 @@ button {
   text-transform: uppercase;
 }
 
-.task-input {
+.task__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -95,12 +95,12 @@ button {
   color: #888;
 }
 
-.task-input:focus {
+.task__input:focus {
   color: #333;
 }
 
 /* New Task */
-.new-task-label {
+.new-task__label {
   margin-top: 20px;
   display: flex;
 }
@@ -110,7 +110,7 @@ button {
 }
 
 /* Task list */
-.task-item {
+.task__list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -119,51 +119,51 @@ button {
   align-items: center;
 }
 
-.task-item > * {
+.task__list-item > * {
   vertical-align: middle;
 }
 
-.task-input-checkbox {
+.task__input-checkbox {
   margin: 0 10px;
 }
 
-.task-item > .task-label {
+.task__list-item > .task__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-item > .task-input {
+.task__list-item > .task__input {
   width: 226px;
 }
 
-.delete-img {
+.delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete-img:hover {
+.delete__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks-list .task-label {
+#completed-tasks__list .task__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task-item .task-input {
+.task__list-item .task__input {
   display: none;
 }
 
-.edit-mode .task-input {
+.edit-mode .task__input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .task-label {
+.edit-mode .task__label {
   display: none;
 }
