@@ -41,7 +41,7 @@ button {
   .header {
     text-align: center;
   }
-  
+
 }
 
 .main {
@@ -55,10 +55,6 @@ button {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
-}
-
-.task-row {
-  display: flex;
 }
 
 .button {
@@ -76,8 +72,7 @@ button {
 }
 
 /* Heading */
-.task-title,
-.new-task-label {
+.task-title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -106,8 +101,8 @@ button {
 
 /* New Task */
 .new-task-label {
-  display: block;
-  margin: 0 0 20px;
+  margin-top: 20px;
+  display: flex;
 }
 
 #new-task {
@@ -154,7 +149,7 @@ button {
 }
 
 /* Completed */
-#completed-tasks .task-label {
+#completed-tasks-list .task-label {
   text-decoration: line-through;
   color: #888;
 }

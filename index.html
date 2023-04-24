@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Todo App</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
-  </head>
-  <body class="page">
-    <div class="header">
-      <img class="header-img" src="./eisenhower-matrix.jpg">
-      <a class="header-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="main">
-      <p id="add-task">
-        <label class="new-task-label task-label" for="new-task">Add Item</label>
-        <div class="task-row">
-          <input id="new-task" class="add-task-input task-input" type="text">
-          <button class="button">Add</button>
-        </div>
-      </p>
+
+<head>
+  <title>Todo App</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+</head>
+
+<body class="page">
+  <header class="header">
+    <img class="header-img" src="./eisenhower-matrix.jpg">
+    <a class="header-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  </header>
+  <main class="main">
+    <section class="add-task-section" id="add-task">
+      <h3 class="task-title">Add Item</h3>
+      <label class="new-task-label" for="new-task">
+        <input id="new-task" class="add-task-input task-input" type="text">
+        <button class="button">Add</button>
+      </label>
+    </section>
+    <section class="incomplete-tasks-section" id="incomplete-tasks">
       <h3 class="task-title">Todo</h3>
-      <ul class="task-list" id="incomplete-tasks">
+      <ul class="task-list" id="incomplete-tasks-list">
         <li class="task-item">
           <input class="task-input-checkbox" type="checkbox">
           <label class="task-label">Pay Bills</label>
@@ -39,8 +42,10 @@
           </button>
         </li>
       </ul>
+    </section>
+    <section class="completed-tasks-section" id="completed-tasks">
       <h3 class="task-title">Completed</h3>
-      <ul class="task-list" id="completed-tasks">
+      <ul class="task-list" id="completed-tasks-list">
         <li class="task-item">
           <input class="task-input-checkbox" type="checkbox" checked>
           <label class="task-label">See the Doctor</label>
@@ -51,7 +56,9 @@
           </button>
         </li>
       </ul>
-    </div>
-    <script src="app.js"></script>
-  </body>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+
 </html>
